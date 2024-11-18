@@ -9,8 +9,9 @@ const meta: Meta<typeof Button> = {
 	component: Button,
     args: {
 		children: 'Button',
-		variant: 'Default',
+		variant: 'Primary',
 		size: 'Standard',
+		type: 'Solid',
 	},
 	argTypes: {
 		disabled: { 
@@ -18,7 +19,10 @@ const meta: Meta<typeof Button> = {
 		},
 		variant: {
 			control: 'select',
-		}
+		},
+		// type: { 
+		// 	control: 'select',
+		// },
 	},
 } satisfies Meta;
 
@@ -28,6 +32,7 @@ export const Primary: Story = {
 	args: {
 		children: 'Button',
 		variant: 'Primary',
+		type: 'Filled',
 	},
 };
 
@@ -35,6 +40,7 @@ export const Secondary: Story = {
 	args: {
 		children: 'Button',
 		variant: 'Secondary',
+		type: 'Filled',
 	},
 };
 
@@ -42,6 +48,7 @@ export const AccentCool: Story = {
 	args: {
 		children: 'Button',
 		variant: "Accent Cool",
+		type: 'Filled',
 	},
 };
 
@@ -49,5 +56,13 @@ export const AccentWarm: Story = {
 	args: {
 		children: 'Button',
 			variant: 'Accent Warm',
+			type: 'Filled',
+	},
+};
+
+export const Outline: Story = {
+	args: {
+		children: 'Button',
+			type: 'Outline',
 	},
 };
