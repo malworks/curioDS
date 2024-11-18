@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Button } from './button';
 
 type Story = StoryObj<typeof Button>;
@@ -20,9 +19,9 @@ const meta: Meta<typeof Button> = {
 		variant: {
 			control: 'select',
 		},
-		// type: { 
-		// 	control: 'select',
-		// },
+		type: { 
+			control: 'select',
+		},
 	},
 } satisfies Meta;
 
