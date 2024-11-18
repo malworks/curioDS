@@ -39,23 +39,7 @@ export const Secondary: Story = {
 	args: {
 		children: 'Button',
 		variant: 'Secondary',
-		type: 'Filled',
-	},
-};
-
-export const AccentCool: Story = {
-	args: {
-		children: 'Button',
-		variant: "Accent Cool",
-		type: 'Filled',
-	},
-};
-
-export const AccentWarm: Story = {
-	args: {
-		children: 'Button',
-			variant: 'Accent Warm',
-			type: 'Filled',
+		type: 'Solid',
 	},
 };
 
@@ -63,5 +47,12 @@ export const Outline: Story = {
 	args: {
 		children: 'Button',
 			type: 'Outline',
+	},
+};
+
+export const Unstyled: Story = {
+	args: {
+		children: 'Button',
+		type: 'Unstyled',
 	},
 };

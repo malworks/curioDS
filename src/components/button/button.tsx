@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 export type ButtonProps = ComponentProps<'button'> & {
 	type: 'Solid' | 'Outline' | 'Unstyled';
-	variant: 'Primary' | 'Secondary' | 'Accent Cool' | 'Accent Warm';
+	variant: 'Primary' | 'Secondary';
 	size: 'Standard' | 'Big';
 };
 
