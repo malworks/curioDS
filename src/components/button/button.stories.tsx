@@ -1,58 +1,70 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './button';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button } from "./button";
 
 type Story = StoryObj<typeof Button>;
 
 const meta: Meta<typeof Button> = {
-	title: 'Button',
-	component: Button,
-    args: {
-		children: 'Button',
-		variant: 'Primary',
-		size: 'Standard',
-		type: 'Solid',
-	},
-	argTypes: {
-		disabled: { 
-			control: 'boolean',
-		},
-		variant: {
-			control: 'select',
-		},
-		type: { 
-			control: 'select',
-		},
-	},
+  title: "Button",
+  component: Button,
+  parameters: {
+    layout: "centered",
+  },
+  args: {
+    children: "Button",
+    mainColor: { control: "color" },
+    size: "Standard",
+    type: "Solid",
+  },
+  argTypes: {
+    disabled: {
+    control: "boolean",
+    },
+    mainColor: {
+      control: "select",
+    },
+    type: {
+      control: "select",
+    },
+    tags: ["autodocs"],
+  },
 } satisfies Meta;
 
 export default meta;
 
 export const Primary: Story = {
-	args: {
-		children: 'Button',
-		variant: 'Primary',
-		type: 'Filled',
-	},
+  args: {
+    children: "Button",
+    mainColor: "Primary",
+    type: "Filled",
+  },
 };
 
 export const Secondary: Story = {
-	args: {
-		children: 'Button',
-		variant: 'Secondary',
-		type: 'Solid',
-	},
+  args: {
+    children: "Button",
+    mainColor: "Secondary",
+    type: "Solid",
+  },
 };
 
+export const AccentGold: Story = {
+    args: {
+      children: "Button",
+      type: "Solid",
+      mainColor: "Accent"
+    },
+  };
+
 export const Outline: Story = {
-	args: {
-		children: 'Button',
-			type: 'Outline',
-	},
+  args: {
+    children: "Button",
+    type: "Outline",
+  },
 };
 
 export const Unstyled: Story = {
-	args: {
-		children: 'Button',
-		type: 'Unstyled',
-	},
+  args: {
+    children: "Button",
+    type: "Unstyled",
+  },
 };
