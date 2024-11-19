@@ -1,6 +1,6 @@
 .button {
 	align-items: center;
-	background-color: #074E67;
+	background-color: #076181;
 	border-color: transparent;
 	border-radius: 0.25rem;
 	border-width: 1px;
@@ -15,10 +15,19 @@
 	padding: 20px 12px;
 }
 
-/* Focus visible styles */
+/* States styles */
 .button:focus-visible {
-	outline: 2px solid;
+	outline: .25rem solid #05878A;
 	outline-offset: 2px;
+    outline-offset: .25rem;
+}
+
+.button:hover {
+	background-color: #0E536C;
+}
+
+.button:active {
+	background-color: #093849;
 }
 
 /* Disabled styles */
@@ -27,18 +36,7 @@
 	color: #454545;
 }
 
-.button:hover {
-	background-color: #023041;
-}
-
-.button:focus {
-	outline: .25rem solid #C78639;
-	outline-offset: .25rem;
-}
-
-.button:active {
-	background-color: #0d5671;
-}
+/* Sizes */
 
 .sizeStandard {
 	height: 44px;
@@ -59,42 +57,40 @@
 }
 
 .Secondary:hover {
-	background-color: #450534;
+	background-color: #7A1D62;
 }
 
 .Secondary:active {
-	background-color: #29031f;
+	background-color: #50073D;
+}
+
+/* Type: Outline */
+.Outline {
+	border-color: #076181;
+	border-width: 2px;
+	color: #076181;
+	background-color: transparent;
+}
+
+.Outline:hover {
+	background-color: #F2F6F8;
+}
+
+.Outline:active {
+	background-color: #DBE1E4;
 }
 
 /* Variant: Unstyled */
 .Unstyled {
 	background-color: transparent;
-	color: #07648D;
+	color: #076181;
 	text-decoration: underline;
 }
 
 .Unstyled:hover {
-	background-color: #d6dde0;
+	background-color: #F2F6F8;
 }
 
 .Unstyled:active {
-	background-color: #b4bbbd;
-}
-
-/* Type: Outline */
-.Outline {
-	border-color: #074E67;
-	border-width: 2px;
-	color: #074E67;
-	background-color: transparent;
-}
-
-.Outline:hover {
-	background-color: #d6dde0;
-}
-
-.Outline:active {
-	background-color: #074E67;
-	color: white;
-
+	background-color: #D9E3E8;
 }
