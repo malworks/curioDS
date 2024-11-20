@@ -68,3 +68,11 @@ export const Unstyled: Story = {
     type: "Unstyled",
   },
 };
+
+export const sizeBig: Story = {
+    args: {
+      children: "Button",
+      type: "Solid",
+      size: "Big",
+    },
+  };
