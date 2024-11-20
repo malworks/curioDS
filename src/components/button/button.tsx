@@ -9,9 +9,9 @@ export type ButtonProps = ComponentProps<"button"> & {
 };
 
 export const Button = ({
-  type = "Solid",
-  mainColor = "Primary",
-  size = 'Standard',
+  type,
+  mainColor,
+  size,
   className,
   ...props
 }: ButtonProps) => {
