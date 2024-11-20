@@ -11,7 +11,7 @@ export type ButtonProps = ComponentProps<"button"> & {
 export const Button = ({
   type = "Solid",
   mainColor = "Primary",
-  size = false,
+  size = 'Standard',
   className,
   ...props
 }: ButtonProps) => {
