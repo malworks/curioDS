@@ -1,0 +1,32 @@
+$primaryColor: #076181;
+$secondaryColor: #67074e;
+$accentColor: #EDA550;
+
+.chip {
+  align-items: center;
+  background-color: $primaryColor;
+  border-color: transparent;
+  border-radius: 0.333rem;
+  border-width: 1px;
+  color: white;
+  display: inline-flex;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  height: 25px;
+  font-size: 12px;
+  padding: 7px 8px;
+}
+
+/* Variant: Secondary */
+.Secondary {
+  background-color: $secondaryColor;
+  color: white;
+}
+
+.Secondary:hover {
+  background-color: #7a1d62;
+}
+
+.Secondary:active {
+  background-color: #50073d;
+}
