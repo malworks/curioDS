@@ -1,11 +1,11 @@
-import React from 'react';
 import type { Meta, StoryObj } from "@storybook/react";
 import { Chip } from "./chip";
+
 
 type Story = StoryObj<typeof Chip>;
 
 
-const meta: Meta<typeof Chip> = {
+const meta = {
     title: 'Components/Chip',
     component: Chip,
     parameters: {
