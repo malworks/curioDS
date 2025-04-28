@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./button";
 
-type Story = StoryObj<typeof Button>;
-
 const meta = {
   title: "Components/Button",
   component: Button,
@@ -11,9 +9,9 @@ const meta = {
   },
   args: {
     children: "Button",
-    mainColor: { control: "color" },
+    mainColor: "Primary",
     size: "Standard",
-    type: "Solid",
+    category: "Solid",
   },
   argTypes: {
     disabled: {
@@ -22,20 +20,20 @@ const meta = {
     mainColor: {
       control: "select",
     },
-    type: {
+    category: {
       control: "select",
     },
-    tags: ["autodocs"],
   },
-} satisfies Meta;
+} satisfies Meta<typeof Button>; // look up generic types
 
 export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
     children: "Button",
     mainColor: "Primary",
-    type: "Filled",
+    category: "Solid",
   },
 };
 
@@ -43,14 +41,14 @@ export const Secondary: Story = {
   args: {
     children: "Button",
     mainColor: "Secondary",
-    type: "Solid",
+    category: "Solid",
   },
 };
 
 export const AccentGold: Story = {
     args: {
       children: "Button",
-      type: "Solid",
+      category: "Solid",
       mainColor: "Accent"
     },
   };
@@ -58,21 +56,21 @@ export const AccentGold: Story = {
 export const Outline: Story = {
   args: {
     children: "Button",
-    type: "Outline",
+    category: "Outline",
   },
 };
 
 export const Unstyled: Story = {
   args: {
     children: "Button",
-    type: "Unstyled",
+    category: "Unstyled",
   },
 };
 
 export const sizeBig: Story = {
     args: {
       children: "Button",
-      type: "Solid",
+      category: "Solid",
       size: "Big",
     },
   };
