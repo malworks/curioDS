@@ -11,7 +11,6 @@ $accentColor: #EDA550;
   color: white;
   display: inline-flex;
   font-weight: 600;
-  transition: background-color 0.2s;
   height: 25px;
   font-size: 12px;
   padding: 7px 8px;
@@ -29,4 +28,26 @@ $accentColor: #EDA550;
 
 .Secondary:active {
   background-color: #50073d;
+}
+
+/* Variant: AccentGold */
+.Accent {
+  background-color: $accentColor;
+  color: #1B1B1B;
+}
+
+.Accent:hover {
+  background-color: #B77A32;
+}
+
+.Accent:active {
+  background-color: #B77A32;
+}
+
+/* Type: Outline */
+.Outline {
+  border-color: $primaryColor;
+  border-width: 2px;
+  color: $primaryColor;
+  background-color: #F2F6F8;
 }

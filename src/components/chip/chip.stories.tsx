@@ -50,6 +50,24 @@ export const Secondary: Story = {
   },
 };
 
+export const AccentGold: Story = {
+  args: {
+    children: "Chip",
+    mainColor: "Accent",
+    type: "Solid",
+    icon: "True",
+  },
+};
+
+export const Outline: Story = {
+  args: {
+    children: "Chip",
+    mainColor: "Primary",
+    type: "Outline",
+    icon: "True",
+  },
+};
+
 // export const Clickable = Template.bind({});
 // Clickable.args = {
 //     label: 'Clickable Chip',
